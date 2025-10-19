@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Duygu Keklik — Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Sadece tablo ve ikonları düzenleyen ek CSS */
+
+    /* Tablo hücrelerini ortala */
+    .tech-table th,
+    .tech-table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* İkonlar için orantılı boyut */
+    .tech-table .icon {
+      width: 50px;        /* Sabit genişlik */
+      height: 50px;       /* Sabit yükseklik */
+      object-fit: contain; /* Oranı bozmadan sığdır */
+    }
+
+    /* Responsive: küçük ekranlarda tablo kaydırılabilir */
+    @media (max-width: 768px) {
+      .tech-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body class="page-fade">
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="index.html">About</a>
+      <a href="technologies.html" class="active">Technologies</a>
+      <a href="projects.html">Map</a>
+      <a href="social.html">Social</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card hand-drawn">
+      <h1 class="hand-title">Technologies</h1>
+      <p class="lead">Tools and technologies I work with:</p>
+
+      <table class="tech-table">
+        <thead>
+          <tr><th>Technology</th><th>Usage</th><th>Icon</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GNSS</td>
+            <td>Field surveying, VADASE / PPPH-VA experiments, RTK</td>
+            <td><img src="images/gnss.svg.jpg" alt="GNSS" class="icon"/></td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Data processing, scripting, automation</td>
+            <td><img src="images/python.svg.jpeg" alt="Python" class="icon"/></td>
+          </tr>
+          <tr>
+            <td>NetCAD</td>
+            <td>Cadastral drawings and local mapping</td>
+            <td><img src="images/netcad.png.jpeg" alt="NetCAD" class="icon"/></td>
+          </tr>
+          <tr>
+            <td>MicroStation</td>
+            <td>CAD workflows</td>
+            <td><img src="images/microstation.png.png" alt="MicroStation" class="icon"/></td>
+          </tr>
+          <tr>
+            <td>ArcGIS</td>
+            <td>Desktop GIS analysis, cartography</td>
+            <td><img src="images/arcgis.svg.png" alt="ArcGIS" class="icon"/></td>
+          </tr>
+          <tr>
+            <td>QGIS</td>
+            <td>Open-source GIS work</td>
+            <td><img src="images/qgis.svg.png" alt="QGIS" class="icon"/></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© Duygu Keklik</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
