@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Duygu Keklik — Social</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Sosyal ikonları orantılı ve aynı boyutta yap */
+    .social-list .icon {
+      width: 40px;        /* Sabit genişlik */
+      height: 40px;       /* Sabit yükseklik */
+      object-fit: contain; /* Oranı bozmadan sığdır */
+      vertical-align: middle; /* Metinle hizalama */
+      margin-right: 8px;  /* Metinle araya boşluk */
+    }
+
+    /* Sosyal liste düzeni */
+    .social-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-list li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body class="page-fade">
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="index.html">About</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projects.html">Map</a>
+      <a href="social.html" class="active">Social</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card hand-drawn">
+      <h1 class="hand-title">Social</h1>
+      <p class="lead">Find me on:</p>
+
+      <ul class="social-list">
+        <li>
+          <img src="images/github.png" class="icon" alt="GitHub"/>
+          <a href="https://github.com/keklikduygu99" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <img src="images/LinkedIn_icon.svg.png" class="icon" alt="LinkedIn"/>
+          <a href="https://www.linkedin.com/in/duygu-keklik-345011209" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© Duygu Keklik</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
