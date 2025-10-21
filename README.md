@@ -52,7 +52,8 @@ All project customization, text content, styling, and final adjustments were per
 
 **Duygu Keklik**  
  Ankara, Turkey  
- Hacettepe University — Geomatics Engineering  
+ Hacettepe University - Geomatics Engineering
+ Student ID - 2210674065
  e-mail - duygukeklik@hacettepe.edu.tr
 
 
