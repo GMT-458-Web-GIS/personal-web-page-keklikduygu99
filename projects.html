@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Duygu Keklik — Map</title>
 
-  <!-- Mevcut CSS -->
+  <!-- Tema CSS -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- Leaflet CSS -->
@@ -15,14 +15,47 @@
   />
 
   <style>
-    /* Sadece harita stilini ekliyoruz */
+    /* Harita alanı */
     #map {
       width: 100%;
       height: 500px;
-      border: 2px solid #ccc;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border: 2px solid #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
       margin-top: 20px;
+    }
+
+    /* Popup görünümü */
+    .leaflet-popup-content-wrapper {
+      border-radius: 10px;
+      background: #fff7ff;
+      border: 2px solid #d08cff;
+      color: #333;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    }
+
+    .leaflet-popup-content {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .leaflet-popup-content img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 8px;
+      margin-top: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      animation: fadeInPhoto 0.6s ease both;
+    }
+
+    @keyframes fadeInPhoto {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
+    }
+
+    .leaflet-control-attribution {
+      font-size: 12px;
+      color: #555;
     }
   </style>
 </head>
@@ -39,8 +72,7 @@
   <main class="container">
     <section class="card">
       <h1 class="hand-title">Map of Schools & Internships</h1>
-
-      <!-- Harita container -->
+      <p>Click the markers to view my school and internship locations with photos.</p>
       <div id="map"></div>
     </section>
   </main>
@@ -57,24 +89,63 @@
     // OpenStreetMap katmanı ekle
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '© OpenStreetMap katkıda bulunanlar'
+      attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // İşaretçiler ve popup
+    // 📍 Koordinatlar + fotoğraflar
     const locations = [
-      { name: "Ahmet Haşim Primary School", coords: [39.97, 32.65] },
-      { name: "Tapu ve Kadastro Vocational HS", coords: [39.95, 32.70] },
-      { name: "Hacettepe Univ. Geomatics Eng.", coords: [39.87, 32.78] },
-      { name: "Buğra Proje Engineering", coords: [39.92, 32.80] },
-      { name: "General Directorate of Land Registry (TKGM)", coords: [39.91, 32.83] },
-      { name: "Sincan Cadastre Directorate", coords: [39.97, 32.58] },
-      { name: "Etimesgut Cadastre Directorate", coords: [39.96, 32.63] }
+      { 
+        name: "Ahmet Haşim Primary School", 
+        coords: [39.887105013454295, 32.83842924555464],
+        img: "images/okul_ahmethasim.jpg"
+      },
+      { 
+        name: "Tapu ve Kadastro Vocational & Technical Anatolian HS", 
+        coords: [39.856605829359836, 32.84747615327231],
+        img: "images/lise_tapu.jpg"
+      },
+      { 
+        name: "Hacettepe Univ. Mapping and Cadastre Dept.", 
+        coords: [39.808533980752294, 32.380324668400654],
+        img: "images/myo_hacettepe.jpg"
+      },
+      { 
+        name: "Hacettepe Univ. Geomatics Engineering", 
+        coords: [39.86678271655598, 32.73383298957169],
+        img: "images/geomatik_hacettepe.jpg"
+      },
+      { 
+        name: "General Directorate of Land Registry (TKGM)", 
+        coords: [39.91367274326273, 32.84776675167196], <!-- 339 → 39 düzeltilmiş -->
+        img: "images/tkgm.jpg"
+      },
+      { 
+        name: "Etimesgut-Sincan Cadastre Directorate", 
+        coords: [39.94329215522298, 32.598497929493966],
+        img: "images/sincan_etimesgut.jpg"
+      },
+      { 
+        name: "Buğra Proje Engineering", 
+        coords: [39.88743066120134, 32.82725590277265],
+        img: "images/bugra_preoje.jpg"
+      }
     ];
 
+    // 📌 İşaretçileri ekle
     locations.forEach(loc => {
-      L.marker(loc.coords)
-        .addTo(map)
-        .bindPopup(`<b>${loc.name}</b>`);
+      L.marker(loc.coords, {
+        icon: L.icon({
+          iconUrl: 'https://cdn-icons-png.flaticon.com/512/3448/3448339.png',
+          iconSize: [32, 32],
+          iconAnchor: [16, 32],
+          popupAnchor: [0, -28]
+        })
+      })
+      .addTo(map)
+      .bindPopup(`
+        <b>${loc.name}</b><br>
+        <img src="${loc.img}" alt="${loc.name}" />
+      `);
     });
   </script>
 </body>
