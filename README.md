@@ -12,10 +12,15 @@ WEBSİTE STRUCTURE
 ---| Page | Description |
 
 -index.html- About Me — personal and educational background 
+
 -technologies.html - Technologies and software I use (GNSS, Python, NetCAD, QGIS, etc.) 
+
 -projects.html -Interactive map (Leaflet.js) showing schools and internship locations 
+
 -social.html - Links to my GitHub and LinkedIn profiles 
+
 -style.css - Main theme with beige tones  and responsive design 
+
 -images/ -  Folder containing my profile photo, icons, and project images 
 
 
