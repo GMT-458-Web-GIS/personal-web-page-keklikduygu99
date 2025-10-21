@@ -1,9 +1,9 @@
 /* Modern pink–purple gradient theme with hover animations */
 
 :root {
-  --gradient: linear-gradient(135deg, #71e7f7 0%, #23d5e2 100%);
-  --accent: #3855f8;
-  --accent2: #5fcafc;
+  --gradient: linear-gradient(135deg, #87885e 0%, #bdaf81 100%);
+  --accent: #87885e;
+  --accent2: #bdaf81;
   --text: #222;
   --muted: #555;
   --white: #fff;
@@ -89,7 +89,7 @@ body {
   animation: fadeUp 0.8s ease both;
 }
 .hand-title {
-  background: linear-gradient(90deg, #71e7f7, #23d5e2);
+  background: linear-gradient(90deg, #bdaf81, #bdaf81);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -164,7 +164,7 @@ body {
 .ol-popup {
   background: #fff;
   border-radius: 12px;
-  border: 2px solid #71e7f7;
+  border: 2px solid #bdaf81;
   padding: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
