@@ -5,24 +5,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Duygu Keklik — Technologies</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Sadece tablo ve ikonları düzenleyen ek CSS */
 
-    /* Tablo hücrelerini ortala */
+  <style>
+    /* Tablo düzeni */
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
     .tech-table th,
     .tech-table td {
       text-align: center;
       vertical-align: middle;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    /* İkonlar için orantılı boyut */
+    /* Başlık satırında sadece iki sütun kalsın */
+    .tech-table thead th {
+      background: rgba(255, 255, 255, 0.6);
+      font-weight: 600;
+      color: #87885e;
+    }
+
+    /* İkon boyutu */
     .tech-table .icon {
-      width: 50px;        /* Sabit genişlik */
-      height: 50px;       /* Sabit yükseklik */
-      object-fit: contain; /* Oranı bozmadan sığdır */
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
     }
 
-    /* Responsive: küçük ekranlarda tablo kaydırılabilir */
+    /* Hover efekti */
+    .tech-table tbody tr:hover {
+      background: #87885e(255, 220, 255, 0.4);
+      transition: 0.3s;
+    }
+
+    /* Küçük ekranlar */
     @media (max-width: 768px) {
       .tech-table {
         display: block;
@@ -43,44 +63,59 @@
   </header>
 
   <main class="container">
-    <section class="card hand-drawn">
+    <section class="card">
       <h1 class="hand-title">Technologies</h1>
       <p class="lead">Tools and technologies I work with:</p>
 
       <table class="tech-table">
         <thead>
-          <tr><th>Technology</th><th>Usage</th><th>Icon</th></tr>
+          <tr>
+            <th>Technology</th>
+            <th>Usage</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
-            <td>GNSS</td>
+            <td>
+              GNSS <br>
+              <img src="images/gnss.svg.jpg" alt="GNSS" class="icon"/>
+            </td>
             <td>Field surveying, VADASE / PPPH-VA experiments, RTK</td>
-            <td><img src="images/gnss.svg.jpg" alt="GNSS" class="icon"/></td>
           </tr>
           <tr>
-            <td>Python</td>
+            <td>
+              Python <br>
+              <img src="images/python.svg.jpeg" alt="Python" class="icon"/>
+            </td>
             <td>Data processing, scripting, automation</td>
-            <td><img src="images/python.svg.jpeg" alt="Python" class="icon"/></td>
           </tr>
           <tr>
-            <td>NetCAD</td>
+            <td>
+              NetCAD <br>
+              <img src="images/netcad.png.jpeg" alt="NetCAD" class="icon"/>
+            </td>
             <td>Cadastral drawings and local mapping</td>
-            <td><img src="images/netcad.png.jpeg" alt="NetCAD" class="icon"/></td>
           </tr>
           <tr>
-            <td>MicroStation</td>
+            <td>
+              MicroStation <br>
+              <img src="images/microstation.png.png" alt="MicroStation" class="icon"/>
+            </td>
             <td>CAD workflows</td>
-            <td><img src="images/microstation.png.png" alt="MicroStation" class="icon"/></td>
           </tr>
           <tr>
-            <td>ArcGIS</td>
+            <td>
+              ArcGIS <br>
+              <img src="images/arcgis.svg.png" alt="ArcGIS" class="icon"/>
+            </td>
             <td>Desktop GIS analysis, cartography</td>
-            <td><img src="images/arcgis.svg.png" alt="ArcGIS" class="icon"/></td>
           </tr>
           <tr>
-            <td>QGIS</td>
+            <td>
+              QGIS <br>
+              <img src="images/qgis.svg.png" alt="QGIS" class="icon"/>
+            </td>
             <td>Open-source GIS work</td>
-            <td><img src="images/qgis.svg.png" alt="QGIS" class="icon"/></td>
           </tr>
         </tbody>
       </table>
