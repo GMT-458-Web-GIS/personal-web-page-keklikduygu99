@@ -38,11 +38,11 @@ This demonstrates the integration of **web mapping** technologies with front-end
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (ES6)**
+- **JavaScript **
 - **Leaflet.js**
 - **OpenStreetMap**
 - **Visual Studio Code**
-- **Git & GitHub Pages**
+
 
 
 
