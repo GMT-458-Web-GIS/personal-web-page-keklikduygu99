@@ -1,13 +1,13 @@
 📧 https://gmt-458-web-gis.github.io/personal-web-page-keklikduygu99/
  
-PERSONAL WEBSİTE 
+   PERSONAL WEBSİTE 
 
 This project is a personal website developed as part of the **Web Design Course Assignment** at **Hacettepe University, Geomatics Engineering Department**.
 
 It showcases my personal background, the technologies I use, and my academic journey, including schools and internship locations displayed on an interactive map.
 
 
-WEBSİTE STRUCTURE
+   WEBSİTE STRUCTURE
 
 ---| Page | Description |
 
@@ -49,7 +49,7 @@ The website follows a **modern, soft gradient theme** using **pink–purple colo
 All pages include subtle animations and are fully responsive for desktop and mobile devices.
 
 
----AI ACKNOWLEDGMENT 
+   AI ACKNOWLEDGMENT 
 
 Some parts of the HTML, CSS structure, and Leaflet integration were developed with the assistance of **ChatGPT (OpenAI)** for learning and educational purposes.  
 All project customization, text content, styling, and final adjustments were personally made by **Duygu Keklik**.
