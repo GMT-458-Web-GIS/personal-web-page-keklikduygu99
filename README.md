@@ -2,7 +2,7 @@
  
    PERSONAL WEBSİTE 
 
-This project is a personal website developed as part of the **Web Design Course Assignment** at **Hacettepe University, Geomatics Engineering Department**.
+ This project is a personal website developed as part of the **Web Design Course Assignment** at **Hacettepe University, Geomatics Engineering Department**.
 
 It showcases my personal background, the technologies I use, and my academic journey, including schools and internship locations displayed on an interactive map.
 
@@ -28,7 +28,7 @@ It showcases my personal background, the technologies I use, and my academic jou
 
 --- Map / projects
 
-The map page was developed using **Leaflet.js** and **OpenStreetMap** base tiles.  
+ The map page was developed using **Leaflet.js** and **OpenStreetMap** base tiles.  
 Each marker on the map displays a popup with the name and photo of a school or internship location.  
 This demonstrates the integration of **web mapping** technologies with front-end web design.
 
@@ -48,14 +48,14 @@ This demonstrates the integration of **web mapping** technologies with front-end
 
 ---Theme & Design
 
-The website follows a **modern, soft gradient theme** using **pink–purple colors**, representing a clean and professional look.  
+ The website follows a **modern, soft gradient theme** using **pink–purple colors**, representing a clean and professional look.  
 All pages include subtle animations and are fully responsive for desktop and mobile devices.
 
 
 
    AI ACKNOWLEDGMENT 
 
-Some parts of the HTML, CSS structure, and Leaflet integration were developed with the assistance of **ChatGPT (OpenAI)** for learning and educational purposes.  
+ Some parts of the HTML, CSS structure, and Leaflet integration were developed with the assistance of **ChatGPT (OpenAI)** for learning and educational purposes.  
 All project customization, text content, styling, and final adjustments were personally made by **Duygu Keklik**.
 
 
